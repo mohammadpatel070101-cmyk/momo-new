@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Momo 💖</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Floating hearts background -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <span class="nav-brand">💌 For Momo</span>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/reasons.html">Why I Love You</a>
+      <a href="pages/memories.html">Our Memories</a>
+      <a href="pages/letter.html">My Letter</a>
+      <a href="pages/quiz.html">Our Quiz</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-label">A little something for…</p>
+      <h1 class="hero-title">My <em>Momo</em> 🌸</h1>
+      <p class="hero-sub">
+        From your <strong>Parental Control</strong> — who loves you more than any setting could ever limit 💕
+      </p>
+      <div class="hero-buttons">
+        <a href="pages/letter.html" class="btn btn-primary">Read My Letter 💌</a>
+        <a href="pages/reasons.html" class="btn btn-secondary">Why I Love You ✨</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="love-orb">
+        <span class="big-heart">💖</span>
+        <div class="orbit orbit-1"><span>🌸</span></div>
+        <div class="orbit orbit-2"><span>⭐</span></div>
+        <div class="orbit orbit-3"><span>🌙</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Cards -->
+  <section class="cards-section">
+    <div class="cards-grid">
+      <a href="pages/reasons.html" class="card">
+        <div class="card-icon">💝</div>
+        <h3>Why I Love You</h3>
+        <p>All the reasons you make my heart sing</p>
+      </a>
+      <a href="pages/memories.html" class="card">
+        <div class="card-icon">📸</div>
+        <h3>Our Memories</h3>
+        <p>Moments I'll treasure forever</p>
+      </a>
+      <a href="pages/letter.html" class="card">
+        <div class="card-icon">💌</div>
+        <h3>Love Letter</h3>
+        <p>Words straight from my heart to yours</p>
+      </a>
+      <a href="pages/quiz.html" class="card">
+        <div class="card-icon">🎮</div>
+        <h3>Our Quiz</h3>
+        <p>How well do you know us?</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Mood Control Panel -->
+  <section class="controls-section">
+    <h2 class="section-title">Momo's Control Panel 🎛️</h2>
+    <p class="section-sub">Because you're in charge of my heart's settings</p>
+    <div class="controls-panel">
+      <div class="control-item">
+        <label>My Love Level for You</label>
+        <input type="range" min="0" max="100" value="100" id="loveSlider" />
+        <span class="control-value" id="loveVal">100% — MAXIMUM 💖</span>
+      </div>
+      <div class="control-item">
+        <label>Cuteness Appreciation</label>
+        <input type="range" min="0" max="100" value="100" id="cuteSlider" />
+        <span class="control-value" id="cuteVal">100% — Off the charts 🌸</span>
+      </div>
+      <div class="control-item">
+        <label>Thinking About You</label>
+        <input type="range" min="0" max="100" value="99" id="thinkSlider" />
+        <span class="control-value" id="thinkVal">99% — Always 🌙</span>
+      </div>
+      <div class="control-toggle">
+        <span>Heart Mode:</span>
+        <label class="toggle">
+          <input type="checkbox" checked id="heartToggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span id="heartStatus">ON 💕</span>
+      </div>
+      <div class="control-toggle">
+        <label>Show Momo she's beautiful:</label>
+        <label class="toggle">
+          <input type="checkbox" checked id="beautyToggle" />
+          <span class="toggle-slider"></span>
+        </label>
+        <span id="beautyStatus">ALWAYS ✨</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily Message -->
+  <section class="message-section">
+    <div class="message-box">
+      <p class="message-day">Today's message for Momo:</p>
+      <p class="message-text" id="dailyMessage">Loading love…</p>
+      <button class="btn btn-ghost" onclick="newMessage()">New message 💬</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Made with every piece of my heart for <strong>Momo</strong> 💖 — by your Parental Control</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
